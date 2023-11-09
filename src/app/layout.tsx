@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
-import Header from '@/components/header'
+import '@/styles/globals.css'
+import Header from '@/components/header/header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,8 +17,10 @@ export default function RootLayout ({
 }): JSX.Element {
   return (
     <html lang='en'>
-      <Header />
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
