@@ -1,6 +1,7 @@
 import HeaderLeft from './components/header-left'
 import SearchBar from './components/search-bar'
 import HeaderRight from './components/header-right'
+import MobileMenu from './components/mobile-menu'
 
 function Header (): JSX.Element {
   return (
@@ -11,6 +12,8 @@ function Header (): JSX.Element {
       <SearchBar />
       {/* Right Side */}
       <HeaderRight />
+      {/* Mobile Menu */}
+      <MobileMenu />
     </header>
   )
 }
